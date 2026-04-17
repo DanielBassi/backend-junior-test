@@ -1,0 +1,30 @@
+{
+  "name": "backend-junior-test",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js",
+    "test": "jest --runInBand",
+    "db:create-tables": "node scripts/create-tables.js",
+    "db:seed": "node scripts/seed-test-user.js",
+    "db:setup": "node scripts/create-tables.js && node scripts/seed-test-user.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^12.2.0",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
+  }
+}
